@@ -3,10 +3,14 @@
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value-preview-text-wrapping value="false" />
 =======
     <value-preview-text-wrapping value="true" />
 >>>>>>> 29a27eb (All Methods added in Container)
+=======
+    <value-preview-text-wrapping value="true" />
+>>>>>>> d7f1c90 (All Methods added in Container)
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">

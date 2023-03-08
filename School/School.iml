@@ -4,10 +4,14 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/School/src" isTestSource="false" />
 =======
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
 >>>>>>> 29a27eb (All Methods added in Container)
+=======
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+>>>>>>> d7f1c90 (All Methods added in Container)
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
