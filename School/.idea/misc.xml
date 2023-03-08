@@ -3,4 +3,10 @@
   <component name="ProjectRootManager" version="2" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+>>>>>>> 29a27eb (All Methods added in Container)
 </project>
