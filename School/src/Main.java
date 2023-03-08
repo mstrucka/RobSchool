@@ -38,7 +38,7 @@ public class Main {
             PersonContainer.add(new Person((String)names.get(generate.nextInt(names.size())), (Integer)ages.get(generate.nextInt(ages.size()))));
         }
 
-        System.out.println(PersonContainer.toString());
+//        System.out.println(PersonContainer.toString());
 //TODO:Skuska
     }
 //    Person p = new Person("robike", 24);
