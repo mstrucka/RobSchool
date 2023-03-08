@@ -39,7 +39,7 @@ public class Main {
         }
 
         System.out.println(PersonContainer.toString());
-
+//TODO:Skuska
     }
 //    Person p = new Person("robike", 24);
 //        PersonContainer.getInstance().addPersonByObject(p);
