@@ -6,7 +6,6 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 import model.Person;
 
 public class Main {
@@ -30,16 +29,17 @@ public class Main {
         ages.add(30);
         ages.add(22);
         ages.add(33);
-        List<Person> personContainer = new ArrayList();
+        new ArrayList();
+        List<Person> PersonContainer = new ArrayList(names.size());
+        System.out.println(PersonContainer);
         Random generate = new Random();
 
-        for (int i = 0; i < names.size() + 1; i++) {
-            personContainer.add(new Person(names.get(generate.nextInt(names.size())), ages.get(generate.nextInt(ages.size()))));
+        for(int i = 0; i < names.size(); ++i) {
+            PersonContainer.add(new Person((String)names.get(generate.nextInt(names.size())), (Integer)ages.get(generate.nextInt(ages.size()))));
         }
 
-        for (Person p : personContainer) {
-            System.out.println(p.toString());
-        }
+        System.out.println(PersonContainer.toString());
+
     }
 //    Person p = new Person("robike", 24);
 //        PersonContainer.getInstance().addPersonByObject(p);
