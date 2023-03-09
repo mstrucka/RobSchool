@@ -21,7 +21,8 @@ public class PersonContainer {
     }
 
     // TODO: implementacia
-    public boolean addPersonByFields(String name, int age) {return false;}
+    public boolean addPersonByFields(String name, int age) {
+        return true;}
     public boolean editPersonByFields(String name, int age) {return false;}
     public boolean addPersonByObject(Person p) {return false;}
     public boolean editPersonByObject(Person p) {return false;}
@@ -30,4 +31,11 @@ public class PersonContainer {
     public void removePersonByObject(Person p) {}
     public void removePersonByName(String name) {}
     public LinkedList<Person> getAllPeople() {return null;}
+
+    @Override
+    public String toString() {
+        return "PersonContainer{" +
+                "people=" + people +
+                '}';
+    }
 }
