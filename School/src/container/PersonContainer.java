@@ -29,20 +29,17 @@ public class PersonContainer {
     public boolean addPersonByObject(Person p) {
         return people.add(p);}
     public boolean editPersonByObject(Person p) {return false;}
-    public Person getPersonByName(String name) {
+    public List<Person> getPersonByName(String name) {
         List<Person> names = new ArrayList<>();
         for (Person p : people) {
             if (p.getName().equalsIgnoreCase(name)) {
-                people.contains(name);
                 names.add(p);
             }
         }
         System.out.println(names);
-        return null;
+        return names;
 
     }
-
-
 
     public List<Person> getPeopleByAgeMoreThan(int age) {
         List<Person> ages = new ArrayList<>();
@@ -52,8 +49,7 @@ public class PersonContainer {
             }
 
         }
-        System.out.println(people.toString());
-
+        System.out.println(ages);
         return ages;
     }
     public void removePersonByName(String name) {
@@ -65,12 +61,13 @@ public class PersonContainer {
         }
     }
     public LinkedList<Person> getAllPeople() {
-        for(int i =0; i < people.size();i++){
-            System.out.println(people.get(i));
-        }
+        System.out.println(people);
+        return people;
 
-        return null;
     }
+
+
+
 
     @Override
     public String toString() {

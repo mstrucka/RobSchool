@@ -20,7 +20,7 @@ public class PersonController {
         return PersonContainer.getInstance().addPersonByObject(p);}
     public boolean editPersonByObject(Person p) {
         return PersonContainer.getInstance().editPersonByObject(p);}
-    public Person getPersonByName(String name) {
+    public List<Person> getPersonByName(String name) {
         return PersonContainer.getInstance().getPersonByName(name);}
     public List<Person> getPeopleByAgeMoreThan(int age) {
         return PersonContainer.getInstance().getPeopleByAgeMoreThan(age);}
@@ -31,6 +31,9 @@ public class PersonController {
     }
     public LinkedList<Person> getAllPeople() {
         return PersonContainer.getInstance().getAllPeople();}
+
+
+
 
     @Override
     public String toString() {

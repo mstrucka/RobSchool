@@ -5,7 +5,7 @@ public class School {
     private int capacity;
     private String address;
 
-    public School() {}
+    public School(String s) {}
     public School(String name, int capacity, String address) {
         this.name = name;
         this.capacity = capacity;
@@ -34,5 +34,14 @@ public class School {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "School{" +
+                "name='" + name + '\'' +
+                ", capacity=" + capacity +
+                ", address='" + address + '\'' +
+                '}';
     }
 }
