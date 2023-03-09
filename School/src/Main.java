@@ -4,21 +4,16 @@
 //
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import container.PersonContainer;
-import controller.PersonController;
 import model.Person;
 
 public class Main {
     public Main() {
-
     }
 
     public static void main(String[] args) {
-        PersonController controller = new PersonController();
         List<String> names = new ArrayList();
         names.add("Robike");
         names.add("Marek");
@@ -27,9 +22,7 @@ public class Main {
         names.add("Martin");
         names.add("Sepetlak");
         names.add("Patres");
-
         List<Integer> ages = new ArrayList();
-
         ages.add(24);
         ages.add(26);
         ages.add(28);
@@ -37,40 +30,17 @@ public class Main {
         ages.add(30);
         ages.add(22);
         ages.add(33);
-
+        List<Person> personContainer = new ArrayList();
         Random generate = new Random();
 
-        for (int i = 0; i < names.size(); ++i) {
-            PersonContainer.getInstance().addPersonByObject(new Person((String) names.get(generate.nextInt(names.size())), (Integer) ages.get(generate.nextInt(ages.size()))));
-
+        for (int i = 0; i < names.size() + 1; i++) {
+            personContainer.add(new Person(names.get(generate.nextInt(names.size())), ages.get(generate.nextInt(ages.size()))));
         }
 
-
-//        Person p = new Person("Marco", 22);
-//        PersonContainer.getInstance().addPersonByFields("Marco",11);
-
-        System.out.println(PersonContainer.getInstance().toString());
-        controller.getAllPeople();
-        controller.getPeopleByAgeMoreThan(22);
-        controller.getPersonByName("Marek");
-
-//        Collections.shuffle(PersonContainer);
-//        PersonContainer.getInstance().removePersonByName("Robike");
-//        System.out.println(PersonContainer.getInstance().toString());
-
-//        PersonContainer.getInstance().getPeopleByAgeMoreThan(26);
-////        PersonContainer.getInstance().getPersonByName("Marek");
-//        PersonContainer.getInstance().getAllPeople();
-
+        for (Person p : personContainer) {
+            System.out.println(p.toString());
+        }
     }
-
-
-
-
-}
-
-
-
 //    Person p = new Person("robike", 24);
 //        PersonContainer.getInstance().addPersonByObject(p);
 //        System.out.println(PersonContainer.getInstance().getAllPeople());
@@ -86,4 +56,4 @@ public class Main {
 
     // BONUS: list bude len abeceda a to meno pre person/školu poskladáš z 5-8 písmen
 
-
+}

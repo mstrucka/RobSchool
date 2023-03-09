@@ -9,7 +9,7 @@ public class SchoolContainer {
     private static SchoolContainer instance;
     private final LinkedList<School> schools;
 
-    private SchoolContainer() {
+    public SchoolContainer() {
         schools = new LinkedList<>();
     }
 
@@ -19,5 +19,16 @@ public class SchoolContainer {
         }
         return instance;
     }
-    // TODO: see PersonContainer, 5-10 methods
+    public boolean addSchoolByFields(String name ,Integer capacity ,String address){
+        return schools.add(new School(name,capacity,address));
+    }
+
+    public boolean addSchoolByObject(School s){
+        return schools.add(s);
+    }
+
+    public LinkedList<School> getAllSchools(){
+        return schools;
+
+    }
 }
